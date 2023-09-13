@@ -11,7 +11,7 @@ void Engine::run()
 {
 	Window* window = new Window();
 	glfwInit();
-	window->createWindow(500, 500);
+	window->createWindow();
 
 	while (!glfwWindowShouldClose(window->getWindow()) && _isRunning)
 	{

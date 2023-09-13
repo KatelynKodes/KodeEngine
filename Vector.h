@@ -1,30 +1,23 @@
 #pragma once
-
 class Vector
 {
 public:
 	/* Sets the x value of the vector */
 	float setX(float value) { x = value; }
-
-	/* Sets the x value of the vector but this time as an integer */
 	float setX(int value) { x = value; }
 
 	/* Returns the X value of the vector */
 	float getX() { return x; }
-
-	/* Returns the x value of the vector*/
+	/* Returns the x value of the vector as an integer*/
 	float getXInt() { return (int)x; }
 
 	/* Sets the y value of the vector */
 	float setY(float value) { y = value; }
-
-	/* Sets the y value of the vector but as an int*/
 	float setY(int value) { y = value; }
 
 	/* Returns the y value of the vector*/
 	float getY() { return y; }
-
-	/* Returns the y value of the vector but as an int*/
+	/* Returns the y value of the vector as an integer*/
 	float getYInt() { return y; }
 
 protected:
@@ -49,6 +42,7 @@ public:
 
 	/* Returns Z value */
 	float getZ() { return z; }
+	/* Returns Z value as an integer*/
 	int getZInt() { return (int)z; }
 
 	/*Sets the z value*/
@@ -69,10 +63,19 @@ public:
 	Vector4(float xvalue, float yvalue, float zvalue, float wvalue) { x = xvalue, y = yvalue, z = zvalue, w = wvalue; }
 	Vector4(int xvalue, int yvalue, int zvalue, int wvalue) { x = xvalue, y = yvalue, z = zvalue, w = wvalue; }
 
+	/* Returns the value of w */
 	float getW() { return w; }
+	/* Returns the value of w as an integer value*/
 	float getWInt() { return (int)w; }
+
+	/* Sets the value of w */
 	void setW(float value) { w = value; }
 	void setW(int value) { w = value; }
+
+	/*Returns a vector 3 with the x and y values of the vector4*/
+	Vector2 toVector2() { return Vector2(x, y); }
+	/*Returns a vector 3 with the x, y, and z values of the vector4*/
+	Vector3 toVector3() { return Vector3(x, y, z); }
 
 private:
 	float w;
