@@ -1,6 +1,7 @@
 #include "Engine.h"
 #include "Window.h"
 #include "Vector.h"
+#include "Text.h"
 
 Engine::Engine()
 {
@@ -17,6 +18,7 @@ void Engine::run()
 	{
 		glfwSwapBuffers(window->getWindow());
 		glfwPollEvents();
+		Text testText = Text();
 	}
 
 	glfwTerminate();
