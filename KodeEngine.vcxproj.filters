@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="fonts">
+      <UniqueIdentifier>{92ef6394-9054-4778-bb99-87ac296d5c1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,5 +44,13 @@
     <ClInclude Include="Text.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="fonts\arial.ttf">
+      <Filter>fonts</Filter>
+    </Font>
+    <Font Include="fonts\GOTHIC.TTF">
+      <Filter>fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>

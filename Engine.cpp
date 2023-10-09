@@ -18,7 +18,7 @@ void Engine::run()
 	{
 		glfwSwapBuffers(window->getWindow());
 		glfwPollEvents();
-		Text testText = Text();
+		Text testText = Text("arial");
 	}
 
 	glfwTerminate();
