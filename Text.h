@@ -1,9 +1,10 @@
 #pragma once
 #include "Vector.h"
+#include "Aktor.h"
 #include <ft2build.h>
 #include FT_FREETYPE_H
 
-class Text
+class Text : Aktor
 {
 public:
 	Text();
