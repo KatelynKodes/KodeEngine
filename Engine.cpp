@@ -8,22 +8,25 @@ Engine::Engine()
 	_isRunning = true;
 }
 
-void Engine::run()
+void Engine::Run()
 {
 	Window* window = new Window();
 	glfwInit();
 	window->createWindow();
 
+	//Run start first
+	Start();
+
 	while (!glfwWindowShouldClose(window->getWindow()) && _isRunning)
 	{
 		glfwSwapBuffers(window->getWindow());
 		glfwPollEvents();
-		Text testText = Text("arial");
 	}
 
 	glfwTerminate();
 }
 
-void Engine::onDraw()
+void Engine::Start()
 {
+	Text testText = Text("arial");
 }

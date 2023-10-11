@@ -11,3 +11,7 @@ void Aktor::OnUpdate()
 void Aktor::OnDraw()
 {
 }
+
+void Aktor::OnDestroy()
+{
+}
