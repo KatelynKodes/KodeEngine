@@ -7,12 +7,14 @@
 Text::Text()
 {
 	SetFontLibrary();
+	LoadCharacters();
 }
 
 Text::Text(const char* fontname)
 {
 	SetFontLibrary();
 	LoadFont(fontname);
+	LoadCharacters();
 }
 
 void Text::OnDraw()
@@ -21,6 +23,7 @@ void Text::OnDraw()
 
 void Text::OnDestroy()
 {
+	 
 }
 
 void Text::SetFontLibrary()
@@ -63,15 +66,21 @@ void Text::LoadCharacters()
 		LoadFont("arial");
 	}
 
-	//Makes sure the character texture is 1-byte aligned.
+	//Make sure there are no alignment issues
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
+	//Loop through the 128 character ASCII set.
 	for (unsigned char c = 0; c < 128; c++)
 	{
 		//If freetype throws an error trying to load the character
 		if (FT_Load_Char(_font, c, FT_LOAD_RENDER))
 		{
-			std::cout << "ERROR: Could not load glyph" << c << std::endl;
+			std::cout << "ERROR: Could not load glyph " << c << std::endl;
+			continue;
+		}
+		else
+		{
+			std::cout << "Loaded glyph " << c << std::endl;
 			continue;
 		}
 
@@ -99,8 +108,16 @@ void Text::LoadCharacters()
 		//Store the character as a Kharacter
 		Kharacter character = {
 			texture,
+			Vector2(_font->glyph->bitmap.width, _font->glyph->bitmap.rows),
+			Vector2(_font->glyph->bitmap_left, _font->glyph->bitmap_top),
+			_font->glyph->advance.x
 		};
 
 		// Insert the Kharacter in a map
+		Kharacters.insert(std::pair<char, Kharacter>(c, character));
 	}
+
+	//Clear typeface's resources after the glyphs are loaded
+	FT_Done_Face(_font);
+	FT_Done_FreeType(_library);
 }
