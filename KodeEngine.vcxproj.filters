@@ -9,12 +9,21 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="fonts">
+      <UniqueIdentifier>{92ef6394-9054-4778-bb99-87ac296d5c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{8f1361d9-81be-497f-8092-8179ec8ab58f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\vertex shaders">
+      <UniqueIdentifier>{439f7ca0-d19d-44b8-9ea7-eea450d05a75}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="fonts">
-      <UniqueIdentifier>{92ef6394-9054-4778-bb99-87ac296d5c1b}</UniqueIdentifier>
+    <Filter Include="shaders\fragment shaders">
+      <UniqueIdentifier>{78a726b4-a603-4a8c-bb54-6265a7506f2d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,7 @@ Text::Text(const char* fontname)
 
 void Text::OnDraw()
 {
+
 }
 
 void Text::OnDestroy()
