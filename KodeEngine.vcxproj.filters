@@ -42,6 +42,9 @@
     <ClCompile Include="Aktor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Kolor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -59,6 +62,9 @@
     <ClInclude Include="Aktor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Kolor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Font Include="fonts\arial.ttf">
@@ -67,5 +73,13 @@
     <Font Include="fonts\GOTHIC.TTF">
       <Filter>fonts</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TextShader.vert">
+      <Filter>shaders\vertex shaders</Filter>
+    </None>
+    <None Include="TextShader.frag">
+      <Filter>shaders\fragment shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

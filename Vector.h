@@ -3,8 +3,8 @@ class Vector
 {
 public:
 	/* Sets the x value of the vector */
-	float setX(float value) { x = value; }
-	float setX(int value) { x = value; }
+	void setX(float value) { x = value; }
+	void setX(int value) { x = value; }
 
 	/* Returns the X value of the vector */
 	float getX() { return x; }
@@ -14,8 +14,8 @@ public:
 	unsigned int getXIntUnsigned() { return (unsigned int)x; }
 
 	/* Sets the y value of the vector */
-	float setY(float value) { y = value; }
-	float setY(int value) { y = value; }
+	void setY(float value) { y = value; }
+	void setY(int value) { y = value; }
 
 	/* Returns the y value of the vector*/
 	float getY() { return y; }
