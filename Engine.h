@@ -2,8 +2,8 @@ class Engine
 {
 public:
 	Engine();
-	void run();
-	void onDraw();
+	void Run();
+	void Start();
 	bool getIsRunning() { return _isRunning; }
 private:
 	void setIsRunning(bool* value) { _isRunning = value; }

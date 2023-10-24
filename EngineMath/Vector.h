@@ -3,22 +3,26 @@ class Vector
 {
 public:
 	/* Sets the x value of the vector */
-	float setX(float value) { x = value; }
-	float setX(int value) { x = value; }
+	void setX(float value) { x = value; }
+	void setX(int value) { x = value; }
 
 	/* Returns the X value of the vector */
 	float getX() { return x; }
 	/* Returns the x value of the vector as an integer*/
-	float getXInt() { return (int)x; }
+	int getXInt() { return (int)x; }
+	/*Returns the x value of the vector as an unsigned integer*/
+	unsigned int getXIntUnsigned() { return (unsigned int)x; }
 
 	/* Sets the y value of the vector */
-	float setY(float value) { y = value; }
-	float setY(int value) { y = value; }
+	void setY(float value) { y = value; }
+	void setY(int value) { y = value; }
 
 	/* Returns the y value of the vector*/
 	float getY() { return y; }
 	/* Returns the y value of the vector as an integer*/
-	float getYInt() { return y; }
+	int getYInt() { return (int)y; }
+	/*Returns the x value of the vector as an unsigned integer*/
+	unsigned int getYIntUnsigned() { return (unsigned int)y; }
 
 protected:
 	float x;
@@ -31,6 +35,7 @@ public:
 	Vector2() { x = 0; y = 0; }
 	Vector2(float xvalue, float yvalue) { x = xvalue; y = yvalue; }
 	Vector2(int xvalue, int yvalue) { x = xvalue; y = yvalue; }
+	Vector2(unsigned int xvalue, unsigned int yvalue) { x = xvalue; y = yvalue; }
 };
 
 struct Vector3 : public Vector
