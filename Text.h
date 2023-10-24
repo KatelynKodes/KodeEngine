@@ -1,5 +1,5 @@
 #pragma once
-#include "Vector.h"
+#include "EngineMath/Vector.h"
 #include "Aktor.h"
 #include <GLFW/glfw3.h>
 #include <ft2build.h>
@@ -19,6 +19,7 @@ class Text : Aktor
 public:
 	Text();
 	Text(const char* fontname);
+	void OnStart() override;
 	void OnDraw() override;
 	void OnDestroy() override;
 

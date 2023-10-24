@@ -1,6 +1,6 @@
 #include "Window.h"
 #include <GLFW/glfw3.h>
-#include "Vector.h"
+#include "EngineMath/Vector.h"
 
 Window::Window()
 {

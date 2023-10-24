@@ -1,5 +1,5 @@
 #pragma once
-#include "Vector.h"
+#include "EngineMath/Vector.h"
 #include "GLFW/glfw3.h"
 
 class Kolor : Vector4

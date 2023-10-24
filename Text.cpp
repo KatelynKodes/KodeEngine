@@ -1,5 +1,6 @@
 #include "Text.h"
 #include<GLFW/glfw3.h>
+#include <gl/GLU.h>
 #include<iostream>
 #include <ft2build.h>
 #include <string>
@@ -15,6 +16,16 @@ Text::Text(const char* fontname)
 	SetFontLibrary();
 	LoadFont(fontname);
 	LoadCharacters();
+}
+
+void Text::OnStart()
+{
+	//Enable Blending
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA);
+
+	//Create Orthographic Projection
+	
 }
 
 void Text::OnDraw()
