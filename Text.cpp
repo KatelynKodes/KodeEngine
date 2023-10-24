@@ -1,6 +1,5 @@
 #include "Text.h"
 #include<GLFW/glfw3.h>
-#include <gl/GLU.h>
 #include<iostream>
 #include <ft2build.h>
 #include <string>
