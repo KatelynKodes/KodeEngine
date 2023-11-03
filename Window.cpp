@@ -20,7 +20,7 @@ Window::Window(int width, int height, const char* name, GLFWmonitor* monitor, GL
 	_sharedWindow = share;
 }
 
-Window::Window(Vector2 size, const char* name, GLFWmonitor* monitor, GLFWwindow* share)
+Window::Window(EngineMath::Vector2 size, const char* name, GLFWmonitor* monitor, GLFWwindow* share)
 {
 	_width = size.getXInt();
 	_height = size.getYInt();

@@ -5,7 +5,7 @@ class Aktor
 {
 public:
 	Aktor();
-	Aktor(Vector2* _position);
+	Aktor(EngineMath::Vector2* _position);
 	Aktor(float positionX, float positionY);
 	virtual void OnStart();
 	virtual void OnUpdate();
@@ -15,11 +15,11 @@ public:
 	float getYPos() { return _position->getY(); }
 
 protected:
-	void setPosition(Vector2* position) { _position = position; }
+	void setPosition(EngineMath::Vector2* position) { _position = position; }
 	void setPosition(float x, float y) { _position->setX(x), _position->setY(y); }
 	void setXPos(float xValue) { _position->setX(xValue); }
 	void setYPos(float yValue) { _position->setY(yValue); }
 
 private:
-	Vector2* _position;
+	EngineMath::Vector2* _position;
 };

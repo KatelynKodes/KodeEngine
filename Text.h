@@ -11,8 +11,8 @@ class Text : Aktor
 	struct Kharacter
 	{
 		unsigned int TextureID;
-		Vector2 KharacterSize;
-		Vector2 KharacterBearing;
+		EngineMath::Vector2 KharacterSize;
+		EngineMath::Vector2 KharacterBearing;
 		unsigned int KharacterSpacing;
 	};
 

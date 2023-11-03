@@ -119,8 +119,8 @@ void Text::LoadCharacters()
 		//Store the character as a Kharacter
 		Kharacter character = {
 			texture,
-			Vector2(_font->glyph->bitmap.width, _font->glyph->bitmap.rows),
-			Vector2(_font->glyph->bitmap_left, _font->glyph->bitmap_top),
+			EngineMath::Vector2(_font->glyph->bitmap.width, _font->glyph->bitmap.rows),
+			EngineMath::Vector2(_font->glyph->bitmap_left, _font->glyph->bitmap_top),
 			_font->glyph->advance.x
 		};
 
