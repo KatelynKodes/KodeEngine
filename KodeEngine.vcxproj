@@ -153,6 +153,11 @@
     <None Include="TextShader.frag" />
     <None Include="TextShader.vert" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EngineMath\EngineMath.vcxproj">
+      <Project>{9f96ba5d-4d29-4e05-acef-24faf72fc013}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

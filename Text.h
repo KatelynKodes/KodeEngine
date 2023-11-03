@@ -1,5 +1,4 @@
 #pragma once
-#include "EngineMath/Vector.h"
 #include "Aktor.h"
 #include <GLFW/glfw3.h>
 #include <ft2build.h>

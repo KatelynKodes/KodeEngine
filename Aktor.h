@@ -1,6 +1,4 @@
 #pragma once
-#include "EngineMath/Vector.h"
-
 class Aktor
 {
 public:
