@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KodeEngine", "KodeEngine.vcxproj", "{A29B9A50-1AAC-4892-AFAE-3B21C7212698}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013} = {9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineMath", "..\EngineMath\EngineMath.vcxproj", "{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,14 @@ Global
 		{A29B9A50-1AAC-4892-AFAE-3B21C7212698}.Release|x64.Build.0 = Release|x64
 		{A29B9A50-1AAC-4892-AFAE-3B21C7212698}.Release|x86.ActiveCfg = Release|Win32
 		{A29B9A50-1AAC-4892-AFAE-3B21C7212698}.Release|x86.Build.0 = Release|Win32
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Debug|x64.ActiveCfg = Debug|x64
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Debug|x64.Build.0 = Debug|x64
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Debug|x86.ActiveCfg = Debug|Win32
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Debug|x86.Build.0 = Debug|Win32
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Release|x64.ActiveCfg = Release|x64
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Release|x64.Build.0 = Release|x64
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Release|x86.ActiveCfg = Release|Win32
+		{9F96BA5D-4D29-4E05-ACEF-24FAF72FC013}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

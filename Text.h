@@ -1,5 +1,4 @@
 #pragma once
-#include "EngineMath/Vector.h"
 #include "Aktor.h"
 #include <GLFW/glfw3.h>
 #include <ft2build.h>
@@ -11,8 +10,8 @@ class Text : Aktor
 	struct Kharacter
 	{
 		unsigned int TextureID;
-		Vector2 KharacterSize;
-		Vector2 KharacterBearing;
+		//Vector2 KharacterSize;
+		//Vector2 KharacterBearing;
 		unsigned int KharacterSpacing;
 	};
 
