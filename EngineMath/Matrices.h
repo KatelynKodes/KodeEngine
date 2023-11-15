@@ -1,4 +1,5 @@
 #pragma once
+#include "Vector.h"
 
 namespace EngineMath
 {
@@ -20,6 +21,14 @@ namespace EngineMath
 		EngineMath::Matrix3 operator -(Matrix3 rhs);
 		EngineMath::Matrix3 operator *(Matrix3 rhs);
 
+		EngineMath::Matrix3 createTranslation(EngineMath::Vector2 position);
+		EngineMath::Matrix3 createTranslation(float x, float y); //Override
+
+		EngineMath::Matrix3 createScale(EngineMath::Vector2 scale);
+		EngineMath::Matrix3 createScale(float x, float y); //Override
+
+		EngineMath::Matrix3 createRotation(float radians);
+
 	protected:
 		float _a1, _a2, _a3,
 			  _b1, _b2, _b3,
@@ -37,15 +46,35 @@ namespace EngineMath
 
 		static EngineMath::Matrix4 Identity() {
 			return EngineMath::Matrix4(1, 0, 0, 0,
-						   0, 1, 0, 0,
-						   0, 0, 1, 0,
-						   0, 0, 0, 1);
+									   0, 1, 0, 0,
+									   0, 0, 1, 0,
+									   0, 0, 0, 1);
 		}
 
 		EngineMath::Matrix4 operator+(EngineMath::Matrix4 rhs);
 		EngineMath::Matrix4 operator-(EngineMath::Matrix4 rhs);
 		EngineMath::Matrix4 operator*(EngineMath::Matrix4 rhs);
 
+		/// <summary>
+		/// Returns a translated version of the matrix
+		/// </summary>
+		/// <param name="Translation"> A vector 3 holding the values which the matrix will be translated by</param>
+		/// <returns>Matrix 4</returns>
+		EngineMath::Matrix4 createTranslation(EngineMath::Vector3 Translation);
+		EngineMath::Matrix4 createTranslation(float x, float y, float z); //Overload
+
+		/// <summary>
+		/// Returns a scaled version of the current matrix
+		/// </summary>
+		/// <param name="scale"> A Vector 3 holding the values the matrix will be scaled by</param>
+		/// <returns>Matrix 4</returns>
+		EngineMath::Matrix4 createScale(EngineMath::Vector3 scale);
+		EngineMath::Matrix4 createScale(float x, float y, float z); //Overload
+
+
+		EngineMath::Matrix4 createRotationX(float radians);
+		EngineMath::Matrix4 createRotationY(float radians);
+		EngineMath::Matrix4 createRotationZ(float radians);
 
 	private:
 		float _a1, _a2, _a3, _a4, 
